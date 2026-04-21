@@ -47,7 +47,7 @@ RMSE table for 4 models
 - "How do I impute AIRLINE_ID from CARRIER using a lookup?"
 - "How do I apply scipy.stats.boxcox and save as a new column?"
 - "Help me set up LinearRegression and RandomForestRegressor with train/test split and RMSE"
-- Genreal Debugging and helping find errors in code
+- General Debugging and helping find errors in code
 
 **What I changed and how I verified:**
 - Adapted the carrier lookup function after discovering from my own value_counts() 
