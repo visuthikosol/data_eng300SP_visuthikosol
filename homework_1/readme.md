@@ -12,7 +12,7 @@
 
 ### Task 1 — Missing Data
 - Missing value summary table for 6 columns (CARRIER, CARRIER_NAME, AIRLINE_ID, MANUFACTURE_YEAR, NUMBER_OF_SEATS, CAPACITY_IN_POUNDS)
-- After imputation: all 6 columns show 0 nulls except NUMBER_OF_SEATS (8,399) and CAPACITY_IN_POUNDS (5,949) 
+- After imputation: all 6 columns show 0 nulls 
 
 ### Task 2 — Standardization
 - MANUFACTURER: consolidated from 183 variants down to 25 
