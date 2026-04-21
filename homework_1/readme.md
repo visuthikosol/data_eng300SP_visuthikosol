@@ -21,17 +21,17 @@
 - OPERATING_STATUS: mapped to Operating (126,648), Not Operating (5,664), Unknown (1)
 
 ### Task 3 — Drop Missing
-- Rows removed: 43,427
-- Rows remaining: 88,886
+- Rows removed: 31,026
+- Rows remaining: 101,287
 
 ### Task 4 — Box-Cox Transformation
-- Skewness before: NUMBER_OF_SEATS = -0.261, CAPACITY_IN_POUNDS = 2.002
-- Skewness after: NUMBER_OF_SEATS_BOXCOX = -0.67, CAPACITY_IN_POUNDS_BOXCOX = 0.041
+- Skewness before: NUMBER_OF_SEATS = -0.714, CAPACITY_IN_POUNDS = 4.253
+- Skewness after: NUMBER_OF_SEATS_BOXCOX = -0.67, CAPACITY_IN_POUNDS_BOXCOX = 0.296
 - 2 histograms before transformation
 - 2 histograms after transformation (orange)
 
 ### Task 5 — Feature Engineering
-- SIZE column created from NUMBER_OF_SEATS quartiles (Q1=50, Q2=117, Q3=154)
+- SIZE column created from NUMBER_OF_SEATS quartiles (Q1=50, Q2=108, Q3=150)
 - Bar chart: Operating Status by Aircraft Size
 - Bar chart: Aircraft Status by Size Group
 
