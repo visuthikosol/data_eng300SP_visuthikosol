@@ -1,41 +1,36 @@
-# Homework 2: BERT on AWS
-**Nick Visuthikosol**
+# Homework 2
+Nick Visuthikosol
 
 ## How to Run
-
 1. Open `homework_2.ipynb`
-2. Run Cell 1 to set S3 bucket name
-3. Run Cell 2 to install `boto3`
-4. Run Cell 3 to install `datarec-lib`
-5. Run Cell 6 to set AWS credentials (replace with your own from `aws configure export-credentials`)
-6. Run all remaining cells top to bottom
+2. Run cells top to bottom
 
 ## Expected Outputs
 
-### Task 1 — Download and Upload Dataset
+### Task 1: Download and Upload Dataset
 - `ml-1m.zip` uploaded to S3 at `homework_2/data/ml-1m.zip`
 - Three dataframes loaded: `movies` (3,883 rows), `ratings` (1,000,209 rows), `users` (6,040 rows)
 
-### Task 2 — BERT Embeddings (Pre-1980)
-- 887 movies filtered from the full catalogue
+### Task 2: BERT Embeddings
+- 887 movies filtered (pre-1980) from the full catalogue
 - Each movie encoded using `distilbert-base-uncased` 
 - Embeddings saved as `embeddings.pkl` and uploaded to S3 at `embeddings/embeddings.pkl`
 
-### Task 3 — Recommendations (Pre-1980)
-- **Cold user** (no history): 5 movie recommendations based on generic query
+### Task 3: Recommendations (pre-1980)
+- **Cold user** (no history): 5 movie recommendations
 - **Top user** (top 5% by rating count): 5 recommendations based on last 3 watched movies
 - Results uploaded to S3:
   - `recommendations/pre1980/cold_user.csv`
   - `recommendations/pre1980/top_user.csv`
 
-### Task 4 — Full Dataset
+### Task 4: Full Dataset
 - Same pipeline as Task 2 and 3 but on all 3,883 movies
 - Full embeddings saved as `full_embeddings.pkl` and uploaded to S3 at `embeddings/full_embeddings.pkl`
 - Results uploaded to S3:
   - `recommendations/full/cold_user.csv`
   - `recommendations/full/top_user.csv`
 
-### Task 5 — Personal Recommendations
+### Task 5: Personal Recommendations
 - 10 personal movie ratings provided in `MY_RATINGS`
 - Profile built by concatenating rated movie texts 
 - 5 recommendations generated and uploaded to S3:
