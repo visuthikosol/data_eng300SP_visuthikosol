@@ -1,0 +1,7 @@
+Group Members:
+- Rhema Phiri
+- Nick Visuthikosol
+- Maya Solomon
+
+MWAA Environment: de300-airflow-phirisolomonvst-v2
+S3 Bucket: phirisolomonvst
